@@ -1,0 +1,19 @@
+<div id="login-container">
+
+    <form id="login-form" (ngSubmit)="authRequest()">
+
+      <label for="username">Username:</label><br>
+
+      <input [(ngModel)] = "auth.user" type="text" id="username" name="username" placeholder="username"><br>
+
+      <label for="password">Password:</label><br>
+
+      <input [(ngModel)]= "auth.password" type="password" id="password" name="password" placeholder="password"><br><br>
+
+      <button type="submit">LogIn</button>
+
+      <button type="button" [routerLink]="['../register']">SignUp</button>
+
+    </form>
+
+  </div>

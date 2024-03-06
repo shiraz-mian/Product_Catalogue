@@ -1,0 +1,62 @@
+
+<form  name="find" (ngSubmit)="findByCode()">
+
+    <input [(ngModel)] = "search.code" type="text" name="search"  >
+
+    <button type="submit">Find</button>
+
+</form>
+
+
+
+<br>
+
+<br>
+
+
+
+<table>
+
+
+
+    <tr>
+
+        <th></th>
+
+        <th>  Product_Name </th>
+
+        <th>  Product_Code  </th>
+        <th>  Brand  </th>
+
+
+        <th>  Price  </th>
+
+        <th>  Availability  </th>
+
+        <th> </th>
+
+       
+
+    </tr>
+
+   
+
+    <tr *ngFor="let res of result">
+
+        <td></td>
+
+        <td> {{res.name}}  </td>
+
+        <td> {{res.code}} </td>
+        <td> {{res.brand}}</td>
+        <td>  {{res.price}}  </td>
+
+        <td>  {{res.availability}} </td>    
+
+    </tr>
+
+   
+
+   
+
+    </table>
